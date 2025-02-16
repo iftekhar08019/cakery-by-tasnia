@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="valentine">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cakery By Tasnia</title>
+  
+  <!-- 1. Set up Tailwind configuration BEFORE loading the Tailwind script -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d'
+          },
+          scale: {
+          '200': '2', // This sets hover:scale-200 to double the size.
+        },
+        }
+      }
+      // Note: DaisyUI themes cannot be customized via tailwind.config when using the CDN.
+    }
+  </script>
+  
+  <!-- 2. Load Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- 3. Preconnect to Google Fonts and load your custom fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Patrick+Hand&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  
+  <!-- 4. Your custom CSS -->
+  <style>
+    .font-patrick {
+      font-family: "Patrick Hand", serif;
+    }
+  </style>
+  
+  <!-- 5. DaisyUI via CDN (pre-built with default themes) -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  
+  <!-- 6. Font Awesome -->
+  <script src="https://kit.fontawesome.com/dacb0dd481.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-patrick">
+  <header>
+    <nav class="bg-[#FFF9F4] border-solid border-b-2 shadow-lg">
+      <div class="navbar container mx-auto">
+        <div class="navbar-start space-x-3">
+          <img class="lg:w-16 w-14" src="assests/logo.ico" alt="" />
+          <h2 class="hidden lg:block lg:text-2xl">
+            Cakery By Tasnia
+          </h2>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end lg:navbar-end lg:space-x-3">
+          <i class="fa-regular fa-bell hidden lg:block"></i>
+          <i class="fa-solid fa-magnifying-glass hidden lg:block"></i>
+          <button
+            class="hidden lg:block border-solid border-2 py-2 px-6 border-x-pink-200 rounded-lg"
+          >
+            Login
+          </button>
+          <button
+            class="hidden lg:block border-solid border-2 py-2 px-6 border-transparent bg-[#FAE7F4] rounded-lg border-x-pink-200"
+          >
+            Register
+          </button>
+          <i class="fa-solid fa-bars lg:hidden"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner -->
+    <div class="hero min-h-screen">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <img
+          src="assests/Hero.png"
+          class="max-w-sm" />
+        <div>
+          <h1 class="text-5xl font-bold">Elevate Your Celebrations with Cakery by Tasnia</h1>
+          <p class="py-6">
+            Indulge in our handcrafted cakes, where every layer is a celebration of flavor and artistry. From elegant wedding centerpieces to fun birthday creations, Cakery by Tasnia brings your sweetest dreams to life—always baked fresh with premium ingredients and a whole lot of love. Let us make your next occasion truly unforgettable.
+          </p>
+          <button class="hidden lg:block border-solid border-2 py-2 px-6 border-transparent bg-primary rounded-lg">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Your main content -->
+  </main>
+  
+  <footer>
+    <!-- Your footer content -->
+  </footer>
+  <img
+  src="assests/logo.ico"
+  alt="Sticky Logo"
+  class="fixed bottom-4 right-4 w-20 md:w-16 lg:w-40 z-50"
+/>
+</body>
+</html>
